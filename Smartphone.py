@@ -1,8 +1,10 @@
+from typing import List
+
 class Smartphone:
     def __init__(self, memory:int):
         self.memory = memory
-        self.is_on = False
-        self.apps = []
+        self.is_on: bool = False
+        self.apps: List[str] = []   # Pycharm will let me know if I try to add anything, but a string to self.apps
 
     def power(self):
         if not self.is_on:
@@ -10,7 +12,7 @@ class Smartphone:
         else:
             self.is_on = False
 
-    def install(self, app:str, app_memory:int):
+    def install(self, app: str, app_memory: int):
         if app_memory <= self.memory and self.is_on:
             self.memory -= app_memory
             self.apps.append(app)
