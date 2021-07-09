@@ -1,4 +1,4 @@
-import time
+# import time
 
 class Time:
     max_hours = 23
@@ -11,19 +11,12 @@ class Time:
         self.seconds = seconds
 
     def set_time(self, hours: int, minutes: int, seconds: int):
-        return f"{hours}:{minutes}:{seconds}"
+        self.hours = hours
+        self.minutes = minutes
+        self.seconds = seconds
 
     def get_time(self):
-        hh = self.hours
-        mm = self.minutes
-        ss = self.seconds
-        if self.hours < 10:
-            hh = f'0{self.hours}'
-        if self.minutes < 10:
-            mm = f'0{self.minutes}'
-        if self.seconds < 10:
-            ss = f'0{self.seconds}'
-        return time_t.set_time(hh, mm, ss)
+        return f"{self.hours:02d}:{self.minutes:02d}:{self.seconds:02d}"
 
     def next_second(self):
         self.seconds += 1
@@ -35,16 +28,27 @@ class Time:
                 self.hours += 1
                 if self.hours > Time.max_hours:
                     self.hours = 0
-        return Time.get_time(self)
+        return self.get_time()
+
+    @staticmethod
+    def format_time(number):
+        if number <= 9:
+            return f"0{number}"
+        return f"{number}"
 
 
 
-time_t = Time(17, 8, 00)
-time_t.next_second()
-for _ in range(60**3):
-    time.sleep(1)
-    print(f'\r{time_t.next_second()}', end="")
+time = Time(9, 30, 59)
+print(time.next_second())
+time = Time(10, 59, 59)
+print(time.next_second())
+time = Time(23, 59, 59)
+print(time.next_second())
 
+
+# for _ in range(60**3):
+#     time.sleep(1)
+#     print(f'\r{time_t.next_second()}', end="")
 
 # print('Start.')
 # for _ in range(61):
