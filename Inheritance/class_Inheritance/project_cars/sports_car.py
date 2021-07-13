@@ -1,4 +1,4 @@
-from class_Inheritance.project_zoo import Car
+from Inheritance.class_Inheritance.project_zoo import Car
 
 
 class SportsCar(Car):

@@ -1,4 +1,4 @@
-from class_Inheritance.project_zoo import Person
+from Inheritance.class_Inheritance.project_zoo import Person
 
 class Child(Person):
         pass
