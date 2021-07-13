@@ -1,4 +1,4 @@
-from project.animal import Animal
+from class_Inheritance.project_zoo.animal import Animal
 
 class Dog(Animal):
 

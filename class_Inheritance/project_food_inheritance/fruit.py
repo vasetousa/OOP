@@ -1,4 +1,4 @@
-from project.food import Food
+from class_Inheritance.project_zoo import Food
 
 
 class Fruit(Food):

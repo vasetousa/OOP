@@ -1,4 +1,4 @@
-from project.user import User
+from class_Inheritance.project_zoo import User
 
 
 class Library:
