@@ -1,4 +1,4 @@
-from project.user import User
+from Inheritance.class_Inheritance import User
 
 
 class Library:
