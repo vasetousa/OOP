@@ -1,7 +1,7 @@
 
-from project.food import Food
-from project.drink import Drink
-from project.product_repository import ProductRepository
+from Encapsulation.project_wild_cat_zoo import Food
+from Encapsulation.project_wild_cat_zoo import Drink
+from Encapsulation.project_wild_cat_zoo import ProductRepository
 
 
 pr = ProductRepository()

@@ -1,5 +1,5 @@
-from project.dough import Dough
-from project.topping import Topping
+from Setters_Getters.project_Pizza.dough import Dough
+from Setters_Getters.project_Pizza.topping import Topping
 
 
 class Pizza:
