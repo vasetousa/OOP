@@ -1,10 +1,10 @@
-from project.vehicle import Vehicle
-from project.family_car import FamilyCar
-from project.sport_car import SportCar
-from project.motorcycle import Motorcycle
-from project.race_motorcycle import RaceMotorcycle
-from project.cross_motorcycle import CrossMotorcycle
-from project.car import Car
+from project_restaurant.vehicle import Vehicle
+from project_restaurant.family_car import FamilyCar
+from project_restaurant.sport_car import SportCar
+from project_restaurant.motorcycle import Motorcycle
+from project_restaurant.race_motorcycle import RaceMotorcycle
+from project_restaurant.cross_motorcycle import CrossMotorcycle
+from project_restaurant.car import Car
 
 
 vehicle = Vehicle(50, 150)

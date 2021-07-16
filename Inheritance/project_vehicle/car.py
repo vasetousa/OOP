@@ -1,4 +1,4 @@
-from project.vehicle import Vehicle
+from project_restaurant.vehicle import Vehicle
 
 
 class Car(Vehicle):
