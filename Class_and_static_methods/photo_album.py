@@ -11,17 +11,22 @@ class PhotoAlbum:
         pages = photos_count // 4
         return cls(pages)
 
-    def open_spot(self):    # return True/False for open spot for picture
-        return self.page_index < self.pages and len(self.photos[self.page_index]) < 4
+    def open_spot(self):    # return True/False for open spot
+        # for picture
+        return self.page_index < self.pages and \
+               len(self.photos[self.page_index]) < 4
 
     def add_photo(self, label: str):
         if not self.open_spot():
             self.page_index += 1
-        if self.page_index == self.pages and len(self.photos) == self.pages:
+        if self.page_index == self.pages and len(self.photos) == \
+                self.pages:
             return "No more free slots"
         self.photos[self.page_index].append(label)
         # print(self.photos)
-        return f"{label} photo added successfully on page {self.page_index+1} slot {len(self.photos[self.page_index])}"
+        return f"{label} photo added successfully on page " \
+               f"{self.page_index+1} slot " \
+               f"{len(self.photos[self.page_index])}"
 
     def display(self):
         string = ''
@@ -29,7 +34,8 @@ class PhotoAlbum:
         nl = "\n"
         picture = "[] "
         for _ in self.photos:
-            string += dash + ''.join(picture for p in range(len(_))).strip() + nl
+            string += dash + ''.join(picture for p in
+                                     range(len(_))).strip() + nl
         string += dash
 
         return string
@@ -76,7 +82,8 @@ print(album.display())
 #         album.add_photo("first grade")
 #         album.add_photo("eight grade")
 #         album.add_photo("party with friends")
-#         self.assertEqual(album.photos, [['baby', 'first grade', 'eight grade', 'party with friends']])
+#         self.assertEqual(album.photos, [['baby', 'first grade',
+#         'eight grade', 'party with friends']])
 #
 #     def test_display_with_one_page(self):
 #         album = PhotoAlbum(1)
@@ -85,14 +92,16 @@ print(album.display())
 #         album.add_photo("eight grade")
 #         album.add_photo("party with friends")
 #         result = album.display().strip()
-#         self.assertEqual(result, "-----------\n[] [] [] []\n-----------")
+#         self.assertEqual(result, "-----------\n[] [] [] []\n----
+#         -------")
 #
 #     def test_display_with_three_pages(self):
 #         album = PhotoAlbum(3)
 #         for _ in range(8):
 #             album.add_photo("asdf")
 #         result = album.display().strip()
-#         self.assertEqual(result, "-----------\n[] [] [] []\n-----------\n[] [] [] []\n-----------\n\n-----------")
+#         self.assertEqual(result, "-----------\n[] [] [] []\n---
+#         --------\n[] [] [] []\n-----------\n\n-----------")
 #
 #
 # if __name__ == "__main__":

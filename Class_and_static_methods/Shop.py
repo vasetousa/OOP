@@ -26,7 +26,8 @@ class Shop:
         return f"Cannot remove {amount} {item_name}"
 
     def __repr__(self):
-        return f"{self.name} of type {self.type} with capacity {self.capacity}"
+        return f"{self.name} of type {self.type} with " \
+               f"capacity {self.capacity}"
 
 
 fresh_shop = Shop("Fresh Shop", "Fruit and Veg", 50)
