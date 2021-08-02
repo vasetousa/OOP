@@ -1,4 +1,4 @@
-from project.vehicle import Vehicle
+from Class_and_static_methods.project_band import Vehicle
 
 
 class Car(Vehicle):

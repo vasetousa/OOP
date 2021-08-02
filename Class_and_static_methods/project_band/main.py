@@ -1,6 +1,6 @@
-from project.album import Album
-from project.band import Band
-from project.song import Song
+from Class_and_static_methods.project_band.album import Album
+from Class_and_static_methods.project_band.band import Band
+from Class_and_static_methods.project_band.song import Song
 
 
 song = Song("Running in the 90s", 3.45, False)
