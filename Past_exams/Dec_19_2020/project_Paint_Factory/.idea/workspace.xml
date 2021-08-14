@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c71483ad-be1f-4fc3-bb8f-e4112cd8e0a7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Class_and_static_methods/project_Gym/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Code_testing_Unittests/Tests/Paint_Factory/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Code_testing_Unittests/Tests/Paint_Factory/factory/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Code_testing_Unittests/Tests/Paint_Factory/factory/factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Code_testing_Unittests/Tests/Paint_Factory/factory/paint_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Code_testing_Unittests/Tests/Paint_Factory/factory/test_paint_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Code_testing_Unittests/Tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Code_testing_Unittests/Tests/test_paint_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Code_testing_Unittests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Past_exams/Dec_2020/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Past_exams/Dec_2020/medicine/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Past_exams/Dec_2020/supply/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Past_exams/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Polymorphism and Abstraction/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Polymorphism and Abstraction/project_Animal/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Polymorphism and Abstraction/project_Wild_Farm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Polymorphism and Abstraction/project_Wild_Farm/animals/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Problem conditions/OOP_past_exams/1.project_Dec_2020/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Problem conditions/OOP_past_exams/1.project_Dec_2020/medicine/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Problem conditions/OOP_past_exams/1.project_Dec_2020/supply/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/test_paint_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/factory/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/factory/factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/factory/paint_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Problem conditions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scratchpad.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Scratchpad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project.zip" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1wd3LpzGZPiWzjzBqfhkvdlCkwb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vasil\PycharmProjects\OOP\project\Test" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Python tests in test_paint_factory.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Test/test_paint_factory.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in test_paint_factory.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c71483ad-be1f-4fc3-bb8f-e4112cd8e0a7" name="Changes" comment="" />
+      <created>1628774584729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628774584729</updated>
+    </task>
+    <servers />
+  </component>
+</project>
