@@ -1,4 +1,4 @@
-from .factory import Factory
+from Past_exams.Dec_19_2020.project_Paint_Factory.project.factory.factory import Factory
 
 
 class PaintFactory(Factory):

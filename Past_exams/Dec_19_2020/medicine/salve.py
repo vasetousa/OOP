@@ -1,4 +1,4 @@
-from Past_exams.Dec_2020.medicine.medicine import Medicine
+from Past_exams.Dec_19_2020.medicine.medicine import Medicine
 
 
 class Salve(Medicine):

@@ -1,4 +1,4 @@
-from Past_exams.Dec_2020.supply.supply import Supply
+from Past_exams.Dec_19_2020.supply.supply import Supply
 
 
 class FoodSupply(Supply):

@@ -9,7 +9,6 @@ class ListTests(TestCase):
     def test_init_create_all_atributes(self):
         self.assertEqual([1, 2, 3, 4, 5], self.intList.get_data())
 
-
     def test_init_takes_no_integers(self):
         self.intList = IntegerList("1", 2.1, 3.4)
         self.assertEqual([], self.intList.get_data())

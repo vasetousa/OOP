@@ -3,7 +3,7 @@ from Code_testing_Unittests.Tests.worker import Worker
 
 
 class WorkerTests(TestCase):
-    def test_is_worker_initialised_with_all_atributes(self):
+    def test_is_worker_initialised_with_all_attributes(self):
         name = "Gosho"
         salary = 1200
         energy = 100
@@ -21,7 +21,7 @@ class WorkerTests(TestCase):
         worker.rest()
         self.assertEqual(energy + 1, worker.energy)
 
-    def test_is_Exeption_raised_when_worker_tries_to_work_when_negative_or_0_energy(self):
+    def test_is_Exception_raised_when_worker_tries_to_work_when_negative_or_0_energy(self):
         name = "Gosho"
         salary = 1200
         energy = 0

@@ -67,9 +67,9 @@ class Bunker:
 
 
 #
-# from Dec_2020.medicine.painkiller import Painkiller
-# from Dec_2020.medicine.salve import Salve
-# from Dec_2020.survivor import Survivor
+# from Dec_19_2020.medicine.painkiller import Painkiller
+# from Dec_19_2020.medicine.salve import Salve
+# from Dec_19_2020.survivor import Survivor
 #
 #
 # b = Bunker()
