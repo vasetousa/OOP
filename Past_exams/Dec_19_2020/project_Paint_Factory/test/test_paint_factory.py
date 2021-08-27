@@ -1,6 +1,6 @@
 from unittest import TestCase, main
 
-from project.project.factory.paint_factory import PaintFactory
+from rename_to_project_and_finish.project.factory.paint_factory import PaintFactory
 
 
 class TestPaintFactory(TestCase):
