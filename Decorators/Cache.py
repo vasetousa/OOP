@@ -1,4 +1,5 @@
 import functools
+from pprint import pprint
 from time import time
 
 
@@ -8,7 +9,8 @@ def measure_time(func):
         start = time()
         result = func(*args, **kwargs)
         end = time()
-        print(f'{func.__name__} executed in {end - start} sec >>>')
+        if end - start > 0.0:
+            print(f'{func.__name__} executed in {end - start} sec >>>')
         return result
 
     return wrapper
@@ -53,5 +55,9 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-fibonacci(330)
-print(fibonacci.log)
+# fibonacci(n=100)
+# print(fibonacci.log)
+# print()
+fibonacci(100)
+pprint(fibonacci.log)
+
