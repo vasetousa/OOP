@@ -76,6 +76,7 @@
 # print(br)
 
 
+
 # After, another version
 class Book:
     def __init__(self, title, author, location):
