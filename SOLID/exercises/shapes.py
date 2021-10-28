@@ -1,12 +1,14 @@
 from abc import ABC, abstractmethod
 
 
+""" Main class for all Shapes"""
 class Shape(ABC):
     @abstractmethod
     def calculate_area(self):
         pass
 
 
+""" Different shapes, calculate their areas """
 class Rectangle(Shape):
     def __init__(self, width, height):
         self.width = width
@@ -25,6 +27,17 @@ class Triangle(Shape):
         return (self.side * self.h)/2
 
 
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+        self.pi = 3.1415
+
+    def calculate_area(self):
+        return (self.radius ** 2) * self.pi
+
+
+""" Checks if the shapes value given is a list, if all list items are object of Shape
+ and calculates the total area of all Shape areas combined """
 class AreaCalculator:
     def __init__(self, shapes):
         self.shapes = shapes
@@ -48,25 +61,20 @@ class AreaCalculator:
     def shapes(self, value):
         if not isinstance(value, list):
             raise TypeError("Should be of type list")
-        res = [shape for shape in value if not isinstance(shape, Shape)]
+        res = [shape for shape in value if not isinstance(shape, Shape)] # empty when all objects are Shape
         if res:
             raise TypeError("All elements must be of type Shape")
         self.__shapes = value
 
 
-shapes = [Rectangle(1, 6), Triangle(2, 3)]
+shapes = [Rectangle(1, 6), Triangle(2, 3), Circle(6)]
+# shapes = [Rectangle(1, 6), Triangle(2, 3)]
 calculator = AreaCalculator(shapes)
 
 print("The total area is: ", calculator.total_area)
 
 calculator.add_shape(Triangle(100, 3))
+print(f"Adding the shape ...")
 
-print(calculator.total_area)
+print("The total area is: ", calculator.total_area)
 
-# TODO try to bring new feature Circle so that you follow OPen/closed principle
-# shapes = [Rectangle(1, 6), Triangle(2, 3), Circle(6)]
-# calculator = AreaCalculator(shapes)
-
-
-#TODO try to do it with mixins and check if there is not too much abstraction -
-# try to make mro which will lead to the Diamond of the death problem - very common in multiple inheritance behaviour
