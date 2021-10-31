@@ -17,20 +17,16 @@ class Hotel:
     def take_room(self, room_number, people):
         current_room = [r for r in self.rooms if r.number == room_number][0]
         if current_room:
-            if current_room.capacity >= people and current_room.is_taken == False:
-                current_room.is_taken = True
-                self.guests += people
+            current_room.take_room(people)
 
     def free_room(self, room_number):
         current_room = [r for r in self.rooms if r.number == room_number][0]
         if current_room:
-            if current_room.is_taken:
-                current_room.is_taken = False
-                self.guests -= current_room.guests
+            current_room.free_room()
 
     def status(self):
-        free_rooms = [r1.number for r1 in self.rooms if r1.is_taken == False]
-        taken_rooms = [r1.number for r1 in self.rooms if r1.is_taken == True]
+        free_rooms = [r1.number for r1 in self.rooms if not r1.is_taken]
+        taken_rooms = [r1.number for r1 in self.rooms if r1.is_taken]
         return f"Hotel {self.name} has {self.guests} total guests\n" \
                f"Free rooms: {', '.join(map(str, free_rooms))}\n" \
                f"Taken rooms: {', '.join(map(str, taken_rooms))}"
