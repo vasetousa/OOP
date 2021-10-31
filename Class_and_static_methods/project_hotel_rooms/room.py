@@ -1,6 +1,6 @@
 
 class Room:
-    def __init__(self, number: int, capacity: int):
+    def __init__(self, number, capacity):
         self.number = number
         self.capacity = capacity
         self.guests = 0
@@ -17,4 +17,3 @@ class Room:
         if not self.is_taken:
             return f"Room number {self.number} is not taken"
         self.is_taken = False
-        self.guests = 0
