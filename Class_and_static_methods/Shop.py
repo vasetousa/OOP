@@ -12,7 +12,7 @@ class Shop:
         return cls(name, type, 10)
 
     def add_item(self, item_name: str):
-        if self.capacity <= 10:
+        if self.capacity > 0:
             if item_name not in self.items:
                 self.items[item_name] = 1
                 self.capacity -= 1
@@ -30,10 +30,8 @@ class Shop:
                 self.items[item_name] -= amount
                 self.capacity += amount
                 return f"{amount} {item_name} removed from the shop"
-            else:
-                return f"Cannot remove {amount} {item_name}"
-        else:
             return f"Cannot remove {amount} {item_name}"
+        return f"Cannot remove {amount} {item_name}"
 
     def __repr__(self):
         return f"{self.name} of type {self.type} with " \
@@ -47,7 +45,6 @@ print(small_shop)
 
 print(fresh_shop.add_item("Bananas"))
 print(fresh_shop.remove_item("Tomatoes", 2))
-print(fresh_shop.remove_item("Bananas", 2))
 
 print(small_shop.add_item("Jeans"))
 print(small_shop.add_item("Jeans"))
