@@ -1,4 +1,4 @@
-from Class_and_static_methods.project_movie_world import Room
+from Class_and_static_methods.project_hotel_rooms.room import Room
 
 
 class Hotel:
@@ -14,27 +14,25 @@ class Hotel:
     def add_room(self, room: Room):
         self.rooms.append(room)
 
-    def take_room(self, room_number: int, people: int):
-        for room in self.rooms:
-            if room.number == room_number:
-                result = room.take_room(people)
-                if not result:
-                    self.guests += people
+    def take_room(self, room_number, people):
+        current_room = [r for r in self.rooms if r.number == room_number][0]
+        if current_room:
+            if current_room.capacity >= people and current_room.is_taken == False:
+                current_room.is_taken = True
+                self.guests += people
 
     def free_room(self, room_number):
-        for rr in self.rooms:
-            if rr == room_number:
-                self.guests -= rr.guests
-                rr.free_room()
+        current_room = [r for r in self.rooms if r.number == room_number][0]
+        if current_room:
+            if current_room.is_taken:
+                current_room.is_taken = False
+                self.guests -= current_room.guests
 
     def status(self):
-        nl = "\n"
+        free_rooms = [r1.number for r1 in self.rooms if r1.is_taken == False]
+        taken_rooms = [r1.number for r1 in self.rooms if r1.is_taken == True]
+        return f"Hotel {self.name} has {self.guests} total guests\n" \
+               f"Free rooms: {', '.join(map(str, free_rooms))}\n" \
+               f"Taken rooms: {', '.join(map(str, taken_rooms))}"
 
-        free_rooms = [r.number for r in self.rooms if r.is_taken==False]
-        taken_rooms = [r.number for r in self.rooms if r.is_taken==True]
-        string = f"Hotel {self.name} has {self.guests} total guests\n" \
-                 f"Free rooms: {', '.join(map(str, free_rooms))}\n" \
-                 f"Taken rooms: {', '.join(map(str, taken_rooms))}"
-
-        return string
 
