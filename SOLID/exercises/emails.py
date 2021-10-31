@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 
 
-
 class IContent:
 
     def format(self, format, content=None, available_formats={}):
@@ -12,10 +11,11 @@ class IContent:
         return available_formats[format.lower()](content)
 
     @staticmethod
-    def myml_format( content):
+    def myml_format(content):
         return '\n'.join(['<myML>', content, '</myML>'])
+
     @staticmethod
-    def basic_format( content):
+    def basic_format(content):
         return content.capitalize()
 
     @staticmethod
@@ -23,11 +23,7 @@ class IContent:
         return "HTML"
 
 
-
-
 FORMAT_MAPPER = {'myml': IContent.myml_format, 'html': IContent.html_format, 'basic': IContent.basic_format}
-
-
 
 
 class IEmail(ABC):
@@ -45,11 +41,9 @@ class IEmail(ABC):
         pass
 
     def __repr__(self):
-
         template = "Sender: {sender}\nReceiver: {receiver}\nContent:\n{content}"
 
         return template
-
 
 
 class Email(IEmail):
@@ -86,9 +80,8 @@ class MyContent(IContent):
 
     def format(self, format, available_formats):
         res = super().format(format, self.content, available_formats)
-        self.content = ":) "*15 + '\n' + res
+        self.content = ":) " * 15 + '\n' + res
         return self.content
-
 
 
 email = Email('IM')
@@ -98,6 +91,3 @@ content = MyContent('Hello, there!')
 content.format(format='MyMl', available_formats=FORMAT_MAPPER)
 email.set_content(content.content)
 print(email)
-
-
-
